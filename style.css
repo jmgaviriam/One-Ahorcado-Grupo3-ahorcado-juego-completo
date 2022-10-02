@@ -1,3 +1,5 @@
+
+
 body{
   min-width: 1224px;
   position: relative;
@@ -5,14 +7,14 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background: #F3F5FC;
+  background: #b4c4f7;
 }
 
 .subrayado{
   display:flex;
 }
 .dibujarLineas{
-  border-bottom: solid 4px #0A3871;
+  border-bottom: solid 4px #1a1a1b;
   width: 30px;
   margin: 10px;
 }
@@ -35,7 +37,7 @@ body{
   
   /* Dark blue/dark-blue-300 */
   
-  background: #0A3871;
+  background: #2c4e2b;
   border-radius: 24px;
   font-style: normal;
   font-weight: 600;
@@ -46,7 +48,7 @@ body{
 
 /* White */
 
-  color: #FFFFFF;
+  color: #eeece2;
 }
 
 .btn-palabra{
@@ -59,7 +61,7 @@ body{
   height: 67px;
   left: 1.2rem;
   top: 28rem; 
-  border: 1px solid #0A3871;
+  border: 1px solid #2c4e2b;
   box-sizing: border-box;
   border-radius: 24px;
   font-style: normal;
@@ -68,7 +70,7 @@ body{
   line-height: 22px;
   display: flex;
   justify-content: center;
-  color: #0A3871;
+  color: #2c4e2b;
   }
 
   .text-input {
@@ -90,25 +92,38 @@ body{
   
     /* Dark blue/dark-blue-300 */
   
-    color: #0A3871;
+    color: #020202;
     background: transparent;
     border: none;
     text-transform:uppercase;
     }
-  ::placeholder { color: #0A3871; text-transform:lowercase;}
+  ::placeholder { color: #2b2c2c; text-transform:lowercase;}
   
   .text-input:focus { 
       border: none;
       outline: none;
      }
+
+h1{
+      font-size: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    
+      position: absolute;
+      left: 660px;
+      top: 0px;
+    
+    }
+    
 .logo{
   position: absolute;
-  left: 50px;
+  left: 655px;
   right: 37.43%;
-  top: 50px;
+  top: 55px;
   bottom: 0%;
-  width: 50px;
-  height:50px;
+  width: 350px;
+  height:250px;
 }
 .img-alerta{
   position: absolute;
@@ -175,7 +190,7 @@ body{
   left: 0px;
   top: 0px;
 
-  background: #0A3871;
+  background: #2c4e2b;
   border-radius: 24px;
 
   flex: none;
@@ -208,7 +223,7 @@ body{
   background: #D8DFE8;
   /* Dark blue/dark-blue-300 */
 
-  border: 1px solid #0A3871;
+  border: 1px solid #2c4e2b;
   box-sizing: border-box;
   border-radius: 24px;
 
@@ -219,7 +234,7 @@ body{
   flex-grow: 0;
   margin: 0px 24px;
 
-  color: #0A3871;
+  color: #2c4e2b;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;

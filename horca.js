@@ -2,8 +2,8 @@ function dibujarTablero() {
     tablero.lineWidth=8
     tablero.lineCap="round"
     tablero.lineJoin="round"
-    tablero.fillStyle= "#F3F5FC"
-    tablero.strokeStyle = "#0A3871"
+    tablero.fillStyle= "#b4c4f7"
+    tablero.strokeStyle = "black"
     tablero.fillRect(0,0,1200,800)
     tablero.beginPath();
     tablero.moveTo(650,500)
@@ -16,7 +16,7 @@ function dibujarTablero() {
     tablero.lineWidth=6
     tablero.lineCap="round"
     tablero.lineJoin="round"
-    tablero.strokeStyle = "#0A3871"
+    tablero.strokeStyle = "black"
     tablero.beginPath()
     let ancho=600/palabraSecreta.length
     for (let i=0;i<palabraSecreta.length;i++){
@@ -26,12 +26,12 @@ function dibujarTablero() {
     tablero.stroke()
     tablero.closePath()
   }
-  function escrribirLetraCorrecta(index) {
+  function escribirLetraCorrecta(index) {
     tablero.font = 'bold 52px Inter';
     tablero.lineWidth=6
     tablero.lineCap="round"
     tablero.lineJoin="round"
-    tablero.fillStyle= "#0A3871"
+    tablero.fillStyle= "black"
     let ancho=600/palabraSecreta.length
     tablero.fillText(palabraSecreta[index],505+(ancho*index),620)
     tablero.stroke()
@@ -42,7 +42,7 @@ function dibujarTablero() {
     tablero.font = 'bold 40px Inter';
     tablero.lineCap="round"
     tablero.lineJoin="round"
-    tablero.fillStyle="#0A3871"
+    tablero.fillStyle="black"
     tablero.fillText(letra,535+(40*(10-errorsLeft)),710,40)
   }
 
@@ -50,7 +50,7 @@ function dibujarTablero() {
     tablero.lineWidth=8
     tablero.lineCap="round"
     tablero.lineJoin="round"
-    tablero.strokeStyle = "#0A3871"
+    tablero.strokeStyle = "black"
     if(puntaje===8){
     //poste lateral
     tablero.moveTo(700,500)
@@ -97,8 +97,11 @@ function dibujarTablero() {
     tablero.lineWidth=6
     tablero.lineCap="round"
     tablero.lineJoin="round"
-    tablero.fillStyle="red"
-    tablero.fillText("Fin del juego!",930,320)
+    tablero.fillStyle="black"
+    tablero.fillText("Fin del juego!",930,300)
+    tablero.fillText("La palabra era",930,350)
+    tablero.fillStyle="blue"
+    tablero.fillText(palabraSecreta,930,400)
   }
 
   function ganaste() {

@@ -90,6 +90,7 @@ function verificarFinJuego(letra) {
     //valida se el usuário cometió el numero maximo de errores
     if (letrasIncorrectas.length > numeroDeErrores) {
       perdiste()
+      
     }
     else if(letraElegida.length < palabraSecreta.length) {
       adicionarLetraIncorrecta(letra)
@@ -155,7 +156,7 @@ function iniciarJuego() {
 
   // hace con que los de iniciar juego e agregar palabra desaparezcan
   document.getElementById("div-desaparece").style.display = 'none';
-
+  document.getElementById("logo").style.display = "none"
   //llama la función que dibuja el tablero del ahorcado
   dibujarTablero();
 
@@ -168,6 +169,7 @@ function iniciarJuego() {
   // hace con que los botones de nuevo juego e salir aparezcan
   document.getElementById("btn-nuevo-juego").style.display = "block"
   document.getElementById("btn-salir").style.display = "block"
+  
 
   // captura la letra que el usuario escribió
   document.onkeydown = (e) => {
@@ -180,7 +182,7 @@ function iniciarJuego() {
           adicionarLetraCorrecta(palabraSecreta.indexOf(letra))
           for (let i = 0; i < palabraSecreta.length; i++) {
             if (palabraSecreta[i] === letra) {
-              escrribirLetraCorrecta(i)
+              escribirLetraCorrecta(i)
               verificarVencedor(letra)
 
             }
